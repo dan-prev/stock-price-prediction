@@ -1,7 +1,5 @@
-# stock-price-prediction
+ This project tackles a stock return prediction challenge based on a Kaggle competition by Winton Capital. Given anonymized features and short time windows of return data, the goal was to forecast intraday and short-term future returns.
 
-This project focuses on predicting house prices in Ames, Iowa using various regression models. The dataset contains 79 features covering different aspects of each property. After cleaning the data and handling missing values, several models were tested, including linear regression (OLS, Ridge, Lasso), decision trees, random forests, gradient boosting, and XGBoost.
+We cleaned and analyzed the data, distinguishing between categorical and numerical features, applying normalization, encoding, and clustering where needed. Despite testing a range of models—including linear regression, regularized regressions, tree-based models (like CatBoost and XGBoost), and even neural networks—the noisy data made it hard to beat a simple zero-return benchmark.
 
-XGBoost performed best overall, with the lowest RMSE after tuning and applying a log transformation to the target variable. Tree-based models generally outperformed linear ones, though regularization helped improve Ridge and Lasso results. The project also explored feature importance, basic feature engineering, and visualized key trends in the data.
-
-All code for training and evaluation is available in the linked Colab notebook. This report summarizes the workflow, key findings, and model comparisons in a clear and structured format.
+The best-performing models were simpler, with CatBoost using only numerical features showing the strongest results. Future improvements would likely come from better feature engineering or ensemble methods.
